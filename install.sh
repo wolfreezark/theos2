@@ -7,6 +7,6 @@ cd /opt
 git clone git://github.com/coolstar/theos.git
 git clone -b x86_64 git://github.com/coolstar/iOSToolchain4Win.git theos/toolchain/windows/iphone
 git clone https://github.com/wolfreezark/theos.git /opt/theos/sdks/
-tar xvf iPhoneOS9.3.sdk.tbz2
+tar xvf /opt/theos/sdks/iPhoneOS9.3.sdk.tbz2
 cd
 mkdir projects
