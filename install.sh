@@ -1,9 +1,11 @@
 #!/bin/bash
-git clone https://github.com/coolstar/theos.git
-mkdir -p theos/toolchain/windows
-git clone https://github.com/coolstar/iOSToolchain4Win.git theos/toolchain/windows/iphone
-mkdir theos/sdks
-cd theos/sdks
-rm -rf .keep
-git clone https://github.com/wolfreezark/theos.git ../sdks
-tar xvf iPhoneOS9.3.sdk.tbz2
+mkdir -p /opt
+cd /opt
+git clone -b windows git://github.com/coolstar/theos.git
+git clone -b master git://github.com/coolstar/iOSToolchain4Win.git theos/toolchain/windows/iphone
+git clone https://github.com/wolfreezark/theos.git /opt/theos/sdks
+tar xvf opt/theos/sdks/iPhoneOS9.3.sdk.tbz2
+cd
+mkdir projects
+cd projects
+/opt/theos/bin/nic.pl
