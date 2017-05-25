@@ -5,5 +5,5 @@ git clone https://github.com/coolstar/iOSToolchain4Win.git theos/toolchain/windo
 mkdir theos/sdks
 cd theos/sdks
 rm -rf .keep
-git clone https://github.com/wolfreezark/theos.git
+git clone https://github.com/wolfreezark/theos.git ../sdks
 tar xvf iPhoneOS9.3.sdk.tbz2
