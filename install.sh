@@ -4,5 +4,6 @@ mkdir -p theos/toolchain/windows
 git clone https://github.com/coolstar/iOSToolchain4Win.git theos/toolchain/windows/iphone
 mkdir theos/sdks
 cd theos/sdks
-wget https://sdks.website/dl/iPhoneOS9.3.sdk.tbz2
+rm -rf .keep
+git clone https://github.com/wolfreezark/theos.git
 tar xvf iPhoneOS9.3.sdk.tbz2
