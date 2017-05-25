@@ -2,8 +2,11 @@
 cd
 rm -rf .bash_profile
 wget https://raw.githubusercontent.com/wolfreezark/theos2/master/.bash_profile $HOME
-git clone --recursive https://github.com/theos/theos.git ~/theos
-cd ~/theos/sdks
-rm -rf .keep
-git clone https://github.com/wolfreezark/theos.git ../sdks
+mkdir -p /opt
+cd /opt
+git clone git://github.com/coolstar/theos.git
+git clone -b x86_64 git://github.com/coolstar/iOSToolchain4Win.git theos/toolchain/windows/iphone
+git clone https://github.com/wolfreezark/theos.git /opt/theos/sdks/
 tar xvf iPhoneOS9.3.sdk.tbz2
+cd
+mkdir projects
