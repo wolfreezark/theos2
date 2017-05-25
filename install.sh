@@ -8,4 +8,3 @@ tar xvf opt/theos/sdks/iPhoneOS9.3.sdk.tbz2
 cd
 mkdir projects
 cd projects
-/opt/theos/bin/nic.pl
