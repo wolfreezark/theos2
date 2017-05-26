@@ -12,3 +12,5 @@ git clone https://github.com/wolfreezark/theos.git /opt/theos/sdks/
 tar xvf /opt/theos/sdks/iPhoneOS9.3.sdk.tbz2
 cd
 mkdir projects
+cd $THEOS
+git submodule update --init --recursive
