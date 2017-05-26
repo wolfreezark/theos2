@@ -10,3 +10,4 @@ if [ -f "${HOME}/.bashrc" ] ; then
 fi
 
 export THEOS=/opt/theos
+alias theos='/opt/theos/bin/nic.pl'
